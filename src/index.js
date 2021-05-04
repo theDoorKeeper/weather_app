@@ -1,3 +1,13 @@
-   
+import getWeatherData from "../dataLogic";
 
-    console.log("test");
+
+const search = document.querySelector(".searchBtn");
+
+search.addEventListener("click", ()=>{
+     getWeatherData();
+    const searchBar = document.querySelector("input");
+    searchBar.value="";
+    
+/*     const testing =   new WeatherCard(searchBar.value,data.main.temp,data.main.feels_like,data.main.humidty); */
+
+})
