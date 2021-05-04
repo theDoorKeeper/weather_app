@@ -1,4 +1,4 @@
-import getWeatherData from "../dataLogic";
+import getWeatherData from "./dataLogic";
 
 
 const search = document.querySelector(".searchBtn");
