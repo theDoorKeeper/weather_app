@@ -1,4 +1,5 @@
 import WeatherCard from "./cityWeather";
+import createCards from "./domHandler";
 
 const cardStorage= [];
 
@@ -10,8 +11,9 @@ const getWeatherData = async () => {
    const data = await response.json();
 
    const newCard = new WeatherCard(data.name,data.main.temp,data.main.feels_like,data.main.humidity);
-    cardStorage.push(newCard)
+   cardStorage.push(newCard)
    console.log(cardStorage)  
+   createCards();
 
 }
 
