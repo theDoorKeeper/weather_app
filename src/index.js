@@ -1,9 +1,11 @@
-import getWeatherData from "./dataLogic";
+import { getWeatherData } from "./dataLogic";
+
 
 
 const search = document.querySelector(".searchBtn");
 
 search.addEventListener("click", ()=>{
+    console.log("click")
      getWeatherData();
     const searchBar = document.querySelector("input");
     searchBar.value="";
