@@ -4,21 +4,30 @@
 body{
     font: 12px;
     margin: 0;padding: 0;
+	background-image: url("../dist/assets/cool-background.png");
     
 }
 
 .container{
     height: 40rem;
-    width: 100em;
-    border: black solid;
+    width: 102rem;
     margin: auto;
     margin-top: 30px;
-    background: rgba(0, 153, 255, 0.438);
+    background: rgba(0, 0, 0, 0.336);
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	overflow: scroll;
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
 }
 .searchBar{
     margin-top: 30px;
+	border: none;
 }
-
+.container::-webkit-scrollbar {
+	display: none;
+  }
 
 
 
