@@ -1,12 +1,15 @@
 import { ID } from "./helperFunctions";
 
 class WeatherCard {
-    constructor (name,temp,feelsLike,humidity){
+    constructor (name,temp,weather,humidity,wind){
         this.name = name;
         this.temp =  Math.round( temp - 273.15 ) ;
-        this.feelsLike = Math.round( feelsLike - 273.15 );
         this.humidity = humidity;
-        this.id=ID()
+        this.weather = weather;
+        this.wind=wind;
+        this.id=ID();
+
+
     }
 
     

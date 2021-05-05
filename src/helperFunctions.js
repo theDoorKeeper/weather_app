@@ -10,7 +10,7 @@ const ID = function () {
     if (id) element.id = id;
     if (arrayClasses) arrayClasses.forEach((myClass) => element.classList.add(myClass));
   
-    if (content) element.innerText = content;
+    if (content) element.innerHTML = content;
   
     return element;
   };
