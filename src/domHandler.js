@@ -58,8 +58,11 @@ const createCards = () =>{
         else if (card.weather === "Snow"){
             img.src=Snow;
         }
-        else {
+        else if (card.weather==="ThunderStorm"){
             img.src=ThunderStorm;
+        }
+        else {
+            img.src=Clear
         }
 
         
